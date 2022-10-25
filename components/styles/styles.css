@@ -18,6 +18,9 @@ a {
     color: black;
     text-align: right;
 }
+h1>a{
+    color: white;
+}
 
 h2 {
     position: static;
