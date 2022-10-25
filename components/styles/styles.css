@@ -1,0 +1,9 @@
+a{
+    color:black;
+    position: fixed;
+}
+h2{
+    position: static;
+    right: 200;
+    text-align: right;
+}

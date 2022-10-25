@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/components/styles/styles.css" />
+    <title>Peliculas</title>
+</head>
+
+<body>
+    <div class="containernav">
+
+        <div>
+            <a href="#" class="box-shadow-menu">Menú</a>
+        </div>
+
+        <div class="search">
+            <input input type="search" class="input" name="search" placeholder="Busca tu película" />
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+        <button>
+            <a href="login.html">Login / Sign Up</a>
+        </button>
+
+    </div>
+
+    <h2>Lo del momento</h2>
+    <div class="containerinfo">
+        <div class="imgprincipal">
+
+        <img  src="src/img/prueba.jpg">
+        
+         <div class="title">
+            <h1>Cars: Una aventura sobre ruedas</h1>
+            <span>2006 ‧ infantil/Comendia</span>
+         </div>
+
+        </div>
+
+        <div class="imgmoment1">
+            <img  src="src/img/prueba2.jpg"> 
+
+            <div class="title2">
+                <h1>Cars 2: Una aventura sobre ruedas</h1>
+                <span>2011 ‧ Comedia/Infantil </span>
+            </div>
+       </div>
+
+       <div class="imgmoment2"> 
+           <img  src="src/img/prueba3.jpg">
+           <div class="title3">
+
+               <h1>Cars 3: Una aventura sobre ruedas</h1>
+               <span>2017 ‧ Comedia/Deportes </span> 
+            </div>
+       </div>
+    </div> 
+</body>
+
+</html>
+
+<style>
+    body {
+        margin: 0 auto;
+        width: 80%;
+        background-color: #FAFAFA;
+    }
+
+    input {
+
+        display: block;
+        width: 100%;
+    }
+
+
+
+    a {
+        position: static;
+        text-decoration: none;
+        color: black;
+        text-align: right;
+    }
+
+    h2 {
+        position: static;
+        text-align: right;
+    }
+
+    .box-shadow-menu {
+        position: relative;
+        padding-left: 1.25em;
+    }
+
+    .box-shadow-menu:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.25em;
+        width: 1em;
+        height: 0.15em;
+        background: black;
+        box-shadow:
+            0 0.25em 0 0 black,
+            0 0.5em 0 0 black;
+    }
+
+    .containernav {
+        padding-top: 10px;
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .search {
+        display: flex;
+        flex: 1;
+        padding: 0 83px;
+        position: relative;
+        width: 271px;
+
+    }
+
+    .input-icon {
+        color: #191919;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: 80px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .imgprincipal {
+        position: relative;
+    }
+
+    .title {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color:#FAFAFA;
+    }
+    .title2 {
+        position: absolute;
+        font-size: 9px;
+        bottom: 435px;
+        right: 270px;
+        color:#ffffff;
+    }
+    .title3 {
+        position: absolute;
+        font-size:9px;
+        bottom: 210px;
+        right: 270px;
+        color:#000000;
+    }
+
+    .moment {
+        position: relative;
+        left: 900px;
+    }
+    .containerinfo{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+    }
+    .containerinfo .imgprincipal{
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+    .containerinfo .imgmoment2{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .containerinfo .imgmoment2{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .containerinfo img{
+        width: 100%;
+    }
+</style>
