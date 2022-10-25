@@ -1,0 +1,14 @@
+body{
+    overflow: hidden;
+}
+.form , .contenedor{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-y: auto;
+}
+a{
+    text-decoration: none;
+}
