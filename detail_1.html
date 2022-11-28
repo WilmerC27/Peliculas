@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="resources/icon/logo.png">
+
+  <link rel="stylesheet" href="./components/styles/styles.css" />
+  <link rel="stylesheet" href="./components/styles/estilos.css" />
+  
+  <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <title>Peliculones</title>
+</head>
+<body>
+    <!-- Nombre de la pagina -->
+    <div class="container-fluid bg-primary peli_banner">
+        <a class="navbar-brand" href="index.html">
+          <img class="imagen_icono" src="resources/icon/logo.png" alt="">PELICULONES
+        </a>
+      </div>
+  
+      <!-- Barra de opciones -->
+  
+      <nav class="navbar">
+          <div class="container-fluid">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+            
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Que quieres ver?" aria-label="Buscar">
+              <button class="btn btn-primary" type="submit">Buscar</button>
+            </form>
+  
+            <a class="auth-modal-toggle btn btn-primary ms-2 me-1" href="login.html">Login</a>
+          </div>
+      </nav>
+
+    <!-- informacion -->
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-2">
+                <img class="img_1 img-fluid rounded" src="resources/img/cars_1h.jpg" alt="">
+            </div>
+            <div class="col-6">
+                <h1 class="col-auto p-5 row justify-content-around">Cars</h1>
+                <div class="row justify-content-around">
+                    <div class="col-1">99.99 <br> Score</div>
+                    <div class="col-1">#9999 <br> Popularity </div>
+                    <div class="col-1">#9999 <br> Viewers </div>
+                </div>
+                <span class="col-auto p-5 row justify-content-around">FILE | 9999 | PRODUCER</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="info">
+        <h3>SINOPSIS</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+
+    <a href="index.html">regresar</a>
+
+    <!--seccion de comentarios inicio -->
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="card shadow-0 border" style="background-color: #f0f2f5;">
+            <div class="card-body p-4">
+              <div class="form-outline mb-4">
+                <input type="text" id="addANote" class="form-control" placeholder="Type comment..." />
+                <label class="form-label" for="addANote">+ Add a note</label>
+              </div>
+      
+              <div class="card mb-4">
+                <div class="card-body">
+                  <p>Type your note, and hit enter to add it</p>
+      
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-row align-items-center">
+                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp" alt="avatar" width="25"
+                        height="25" />
+                      <p class="small mb-0 ms-2">Martha</p>
+                    </div>
+                    <div class="d-flex flex-row align-items-center">
+                      <p class="small text-muted mb-0">Upvote?</p>
+                      <i class="far fa-thumbs-up mx-2 fa-xs text-black" style="margin-top: -0.16rem;"></i>
+                      <p class="small text-muted mb-0">3</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card mb-4">
+                <div class="card-body">
+                  <p>Type your note, and hit enter to add it</p>
+      
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-row align-items-center">
+                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar" width="25"
+                        height="25" />
+                      <p class="small mb-0 ms-2">Johny</p>
+                    </div>
+                    <div class="d-flex flex-row align-items-center">
+                      <p class="small text-muted mb-0">Upvote?</p>
+                      <i class="far fa-thumbs-up mx-2 fa-xs text-black" style="margin-top: -0.16rem;"></i>
+                      <p class="small text-muted mb-0">4</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card mb-4">
+                <div class="card-body">
+                  <p>Type your note, and hit enter to add it</p>
+      
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-row align-items-center">
+                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp" alt="avatar" width="25"
+                        height="25" />
+                      <p class="small mb-0 ms-2">Mary Kate</p>
+                    </div>
+                    <div class="d-flex flex-row align-items-center text-primary">
+                      <p class="small mb-0">Upvoted</p>
+                      <i class="fas fa-thumbs-up mx-2 fa-xs" style="margin-top: -0.16rem;"></i>
+                      <p class="small mb-0">2</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card">
+                <div class="card-body">
+                  <p>Type your note, and hit enter to add it</p>
+      
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-row align-items-center">
+                      <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar" width="25"
+                        height="25" />
+                      <p class="small mb-0 ms-2">Johny</p>
+                    </div>
+                    <div class="d-flex flex-row align-items-center">
+                      <p class="small text-muted mb-0">Upvote?</p>
+                      <i class="far fa-thumbs-up ms-2 fa-xs text-black" style="margin-top: -0.16rem;"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--sección de comentarios fin-->
+
+</body>
+
+<footer class="footer">
+
+  <div class="wrap-footer">
+    <div class="text-element-footer element-footer">
+    <h3 class="main-c">Peliculones</h3>
+    <p>"Inserte la descripcion aqui"
+    </div>
+    <div class="text-element-footer element-footer">
+      <h5>Dirección</h5>
+      <ul>
+        <li>Av. Kabah</li>
+        <li>Cancun</li>
+        <li>Mvl: (+52) 100 00 00 00</li>
+        <li>Tel: (+52) 200 00 00 00</li>
+      </ul>
+    </div>
+    <div class="text-element-footer link-elements-footer element-footer">
+  <h5>Más Información</h5>
+  <ul>
+  <li><a href="/">Inicio</a></li>
+  <li><a href="#">Nosotros</a></li>
+  <li><a href="#">Blog</a></li>
+  <li><a href="#">Contactar</a></li>
+  </ul>
+  </div>
+  <div class="rrss-element-footer element-footer">
+  <h5>Redes Sociales</h5>
+  <ul>
+  <li>
+  <a href="https://facebook.com" target="_blank" rel="nofollow noopener noreferer"><img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtNTEyIDc1djM2MmMwIDQxLjM5ODQzOC0zMy42MDE1NjIgNzUtNzUgNzVoLTEyMWwtMzAtMzBoLTMwbC0zMCAzMGgtMTUxYy00MS4zOTg0MzggMC03NS0zMy42MDE1NjItNzUtNzV2LTM2MmMwLTQxLjM5ODQzOCAzMy42MDE1NjItNzUgNzUtNzVoMzYyYzQxLjM5ODQzOCAwIDc1IDMzLjYwMTU2MiA3NSA3NXptMCAwIiBmaWxsPSIjNzk4NGViIi8+PHBhdGggZD0ibTUxMiA3NXYzNjJjMCA0MS4zOTg0MzgtMzMuNjAxNTYyIDc1LTc1IDc1aC0xMjFsLTMwLTMwaC0xNXYtNDgyaDE2NmM0MS4zOTg0MzggMCA3NSAzMy42MDE1NjIgNzUgNzV6bTAgMCIgZmlsbD0iIzQ2NjFkMSIvPjxwYXRoIGQ9Im0zMTYgMTgwdjYwaDkwbC0xNSA5MGgtNzV2MTgyaC05MHYtMTgyaC02MHYtOTBoNjB2LTYwYzAtMzMuMzAwNzgxIDE4LjMwMDc4MS02Mi40MDIzNDQgNDUtNzggMTMuMTk5MjE5LTcuNSAyOC44MDA3ODEtMTIgNDUtMTJoOTB2OTB6bTAgMCIgZmlsbD0iI2VjZWNmMSIvPjxwYXRoIGQ9Im0zMTYgMTgwdjYwaDkwbC0xNSA5MGgtNzV2MTgyaC00NXYtNDEwYzEzLjE5OTIxOS03LjUgMjguODAwNzgxLTEyIDQ1LTEyaDkwdjkwem0wIDAiIGZpbGw9IiNlMmUyZTciLz48L3N2Zz4=" alt="icono redes sociales"></a>
+  </li>
+  <li>
+  <a href="mailto:info@itcancun.com"><img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIC0zMSA1MTIgNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0yMTEgMjcwLTQwLjkxNzk2OSA0My42NzU3ODEgMTAuOTE3OTY5IDc2LjMyNDIxOSAxMjAtOTB6bTAgMCIgZmlsbD0iIzAwYzBmMSIvPjxwYXRoIGQ9Im0wIDE4MCAxMjEgNjAgOTAgMzAgMjEwIDE4MCA5MS00NTB6bTAgMCIgZmlsbD0iIzc2ZTJmOCIvPjxwYXRoIGQ9Im0xMjEgMjQwIDYwIDE1MCAzMC0xMjAgMjEwLTE4MHptMCAwIiBmaWxsPSIjMjVkOWY4Ii8+PC9zdmc+" alt="icono redes sociales"></a>
+  </li>
+  <li>
+  <a href="https://wa.me/123456789"><img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMjU2IDBjLTE0MC42OTkyMTkgMC0yNTYgMTE1LjMwMDc4MS0yNTYgMjU2IDAgNDYuNSAxMi41OTc2NTYgOTEuNSAzNi4zMDA3ODEgMTMxLjEwMTU2MmwtMzYuMzAwNzgxIDEyNC44OTg0MzggMTI0Ljg5ODQzOC0zNi4zMDA3ODFjMzkuNjAxNTYyIDIzLjY5OTIxOSA4NC42MDE1NjIgMzYuMzAwNzgxIDEzMS4xMDE1NjIgMzYuMzAwNzgxIDE0MC42OTkyMTkgMCAyNTYtMTE1LjMwMDc4MSAyNTYtMjU2cy0xMTUuMzAwNzgxLTI1Ni0yNTYtMjU2em0wIDAiIGZpbGw9IiMwMGRkN2IiLz48cGF0aCBkPSJtNTEyIDI1NmMwIDE0MC42OTkyMTktMTE1LjMwMDc4MSAyNTYtMjU2IDI1NnYtNTEyYzE0MC42OTkyMTkgMCAyNTYgMTE1LjMwMDc4MSAyNTYgMjU2em0wIDAiIGZpbGw9IiMwMGNjNzEiLz48cGF0aCBkPSJtNDE3LjE5OTIxOSAzNjQuMzAwNzgxLTEyIDExLjY5OTIxOWMtMTYuODAwNzgxIDE2LjgwMDc4MS01NS44MDA3ODEgMTUuNTk3NjU2LTgwLjY5OTIxOSAxMC44MDA3ODEtMjIuMTk5MjE5LTQuMTk5MjE5LTQ2LTE0LjEwMTU2Mi02OC41LTI3LjkwMjM0My02MS4xOTkyMTktMzcuMTk5MjE5LTExNi42OTkyMTktMTAzLjE5OTIxOS0xMzAuMTk5MjE5LTE2Mi41OTc2NTctOS4zMDA3ODEtNDAuMjAzMTI1LTQuMTk5MjE5LTc1IDktODguNWwxMi0xMmM2LjYwMTU2My02LjMwMDc4MSAxNy4wOTc2NTctNi4zMDA3ODEgMjMuNjk5MjE5IDBsNDcuNjk5MjE5IDQ3LjY5OTIxOWMzLjMwMDc4MSAzLjMwMDc4MSA1LjEwMTU2MiA3LjUgNS4xMDE1NjIgMTJzLTEuODAwNzgxIDguNjk5MjE5LTUuMTAxNTYyIDEybC0xMiAxMS42OTkyMTljLTEyLjg5ODQzOCAxMy4xOTkyMTktMTIuODk4NDM4IDM0LjUgMCA0Ny42OTkyMTlsNDkuODAwNzgxIDQ4LjkwMjM0MyAyOS4wOTc2NTYgMjguODAwNzgxYzEzLjIwMzEyNSAxMy4xOTkyMTkgMzUuNTAzOTA2IDEzLjE5OTIxOSA0OC43MDMxMjUgMGwxMS42OTkyMTktMTIuMDAzOTA2YzYuMzAwNzgxLTYgMTcuNjk5MjE5LTYgMjQgMGw0Ny42OTkyMTkgNDcuNzAzMTI1YzYuMzAwNzgxIDYuNTk3NjU3IDYuNjAxNTYyIDE3LjA5NzY1NyAwIDI0em0wIDAiIGZpbGw9IiNlY2VjZjEiLz48cGF0aCBkPSJtNDE3LjE5OTIxOSAzNjQuMzAwNzgxLTEyIDExLjY5OTIxOWMtMTYuODAwNzgxIDE2LjgwMDc4MS01NS44MDA3ODEgMTUuNTk3NjU2LTgwLjY5OTIxOSAxMC44MDA3ODEtMjIuMTk5MjE5LTQuMTk5MjE5LTQ2LTE0LjEwMTU2Mi02OC41LTI3LjkwMjM0M3YtODMuMDk3NjU3bDI5LjA5NzY1NiAyOC44MDA3ODFjMTMuMjAzMTI1IDEzLjE5OTIxOSAzNS41MDM5MDYgMTMuMTk5MjE5IDQ4LjcwMzEyNSAwbDExLjY5OTIxOS0xMi4wMDM5MDZjNi4zMDA3ODEtNiAxNy42OTkyMTktNiAyNCAwbDQ3LjY5OTIxOSA0Ny43MDMxMjVjNi4zMDA3ODEgNi41OTc2NTcgNi42MDE1NjIgMTcuMDk3NjU3IDAgMjR6bTAgMCIgZmlsbD0iI2UyZTJlNyIvPjwvc3ZnPg==" alt="icono redes sociales"></a>
+  </li>
+  </ul>
+  </div>
+  </div>
+  <div class="footer-creds">
+  <div class="copy-creds">
+  <p>©2022 · Todos los derechos reservados.</p>
+  </div>
+  <div class="legal-creds">
+  <ul>
+  <li><a href="#">Política de Privacidad</a></li>
+  <li><a href="#">Política de Cookies</a></li>
+  <li><a href="#">Aviso Legal</a></li>
+  </ul>
+  </div>
+  </div>
+</footer>
+
+</html>
