@@ -4,29 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./components/styles/stylesform.css" />
-    <title>Olvidaste tu contraseña</title>
+    <link rel="icon" href="resources/icon/logo.png">
+
+    <link rel="stylesheet" href="./components/styles/styles.css" />
+    <link rel="stylesheet" href="./components/styles/estilos.css" />
+    
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+  
+    <title>Peliculones</title>
 </head>
 <body>
-    <div class="contenedor">
-        <div id="central">
-            <div id="login">
-                <div class="titulo">
-                    Recupera tu contraseña
-                </div>
-                <form id="login">
-                    <input type="text" name="usuario" placeholder="Ingresa tu correo" required>
 
-                    <input type="password" placeholder="Ingresa tu correo nuevamente" name="password" required>
+    <!-- Nombre de la pagina -->
+    <div class="container-fluid bg-primary peli_banner">
+        <a class="navbar-brand" href="index.html">
+          <img class="imagen_icono" src="resources/icon/logo.png" alt="">PELICULONES
+        </a>
+      </div>
+  
+      <!-- Barra de opciones -->
+  
+      <nav class="navbar">
+          <div class="container-fluid">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+            
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Que quieres ver?" aria-label="Buscar">
+              <button class="btn btn-primary" type="submit">Buscar</button>
+            </form>
+  
+            <a class="auth-modal-toggle btn btn-primary ms-2 me-1" href="login.html">Login</a>
+          </div>
+      </nav>
 
-                    <button type="submit" title="Ingresar" name="Ingresar">Login</button>
-                </form>
+    <div class="row justify-content-center">
+        <div class="col-2">
+            <img class="img_1 img-fluid rounded" src="resources/img/cars_2h.jpg" alt="">
+        </div>
+        <div class="col-6">
+            <h1 class="col-auto p-5 row justify-content-around">Cars</h1>
+            <div class="row justify-content-around">
+                <div class="col-1">99.99 <br> Score</div>
+                <div class="col-1">#9999 <br> Popularity </div>
+                <div class="col-1">#9999 <br> Viewers </div>
             </div>
-            <div class="inferior">
-                <a href="login.html">Volver</a>
-            </div>
+            <span class="col-auto p-5 row justify-content-around">TYPE | 9999 | PRODUCER</span>
         </div>
     </div>
+
+    <div class="info">
+        <h3>SINOPSIS</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+
+    <a href="index.html">regresar</a>
+
 </body>
 
 <footer class="footer">
