@@ -1,3 +1,10 @@
 .ver_pelicula i {
     color: white;
 }
+
+.lista_imagen {
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+  }
