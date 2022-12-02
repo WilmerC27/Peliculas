@@ -7,6 +7,7 @@ if(navmain){
     if(localStorage.getItem("email") && localStorage.getItem("pass")){
         console.log('d')
         navmain.innerHTML='mis listas'
+        navmain.href='lists_watching.html'
     }
 }
 
