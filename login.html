@@ -1,504 +1,164 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PELICULAS</title>
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="bootstrap-5.2.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/detalles.css">
-    <link rel="shortcut icon" href="assets/img/logo_peliculas.png" type="image/x-icon"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-  </head>
-  <body>
-    <!-- #region ENCABEZADO -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Peliculist</title>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="bootstrap-5.2.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/detalles.css">
+        <link rel="shortcut icon" href="assets/img/logo_peliculas.png" type="image/x-icon"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+      </head>
+<body>
+    <!--navbar inicio-->
     <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">
-          <img
-            src="assets/img/logo_peliculas.png"
-            alt=""
-            class="nav__logo-img"
-          />
-          PELICULAS
-        </a>
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="#trick" class="nav__link">Candy</a>
-            </li>
-            <li class="nav__item">
-              <a href="#new" class="nav__link">New</a>
-            </li>
-            <a href="#" class="button button--ghost">Login</a>
-          </ul>
-          <div class="nav__close" id="nav-close">
-            <i class="bx bx-x"></i>
+        <nav class="nav container">
+          <a href="#" class="nav__logo">
+            <img
+              src="assets/img/logo_peliculas.png"
+              alt=""
+              class="nav__logo-img"
+            />
+            <h1>Peliculist</h1>
+          </a>
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+
+              <li class="nav__item">
+                <a href="#about" class="nav__link">Multimedia</a>
+              </li>
+              <li class="nav__item">
+                <a href="#trick" class="nav__link">Recomendados</a>
+              </li>
+              <li class="nav__item">
+                <a href="#new" class="nav__link">Nuevos</a>
+              </li>
+              <a href="#" class="button button--ghost">Login</a>
+            </ul>
+            <div class="nav__close" id="nav-close">
+              <i class="bx bx-x"></i>
+            </div>
+            <img src="assets/img/nav-img.png" alt="" class="nav__img" />
           </div>
-          <img src="assets/img/nav-img.png" alt="" class="nav__img" />
-        </div>
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-grid-alt"></i>
-        </div>
-      </nav>
-    </header>
-    <!-- #endregion -->
-    <!-- #region Principal-->
-    <main class="main">
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-grid-alt"></i>
+          </div>
+        </nav>
+      </header>
+          <!--navbar fin-->
 
-      <!-- carrusel -->
-      <div class="embed-responsive embed-responsive-16by9 " id="home">
-        <iframe class="embed-responsive-item" src="carrusel_peliculas/carrusel.html"  width="1330px" height="620px" scrolling="no"></iframe>
-        <div class="swiper-pagination"></div>
-      </div>
+      <!-- #endregion -->
+      <!-- #region Principal-->
 
-      <!--Menu inicial
-      <section class="home container" id="home">
-        <div class="swiper home-swiper">
-          <div class="swiper-wrapper">
-            <section class="swiper-slide">
-              <div class="home__content grid">
-                <div class="home__group">
-                  <img
-                    src="assets/img/footer1-img.png"
-                    alt=""
-                    class="home__img"
-                  />
-                  <div class="home__indicator"></div>
+      <div>
+        <section class="vh-100 text-black h-black m-5">
+          <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+              <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="p-2 card shadow-2-strong" style="border-radius: 1rem; " id="myform">
+        
+                    <h3 class="mb-5 text-center bg-secondary rounded">Sign in</h3>
+        
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="typeEmailX-2">Email</label>
+                      <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
 
-                  <div class="home__details-img">
-                    <h4 class="home__details-title">The Labu “Reiza”</h4>
-                    <span class="home__details-subtitle">
-                      La calabaza viva</span
-                    >
-                  </div>
+                    </div>
+        
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="typePasswordX-2">Password</label>
+                      <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
+
+                    </div>
+        
+                    <!-- Checkbox -->
+                    <div class="form-check d-flex justify-content-start mb-4">
+                      <input class="form-check-input me-3" type="checkbox" value="" id="form1Example3" />
+                      <label class="form-check-label" for="form1Example3"> Remember password </label>
+                    </div>
+        
+                    <a class="text-center" href="index1.3.html" onclick="login()">
+                      <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+                    </a>
+                    
+        
+                    <hr class="my-4">
+  
+                    <!-- Register buttons -->
+                    <div class="text-center">
+                      <p>Not a member? <a href="register.html">Register</a></p>
+                      <p>or sign up with:</p>
+                      
+                      <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="bi bi-facebook"></i>
+                      </button>
+                  
+                      <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="bi bi-google"></i>
+                      </button>
+                  
+                      <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="bi bi-twitter"></i>
+                      </button>
+                  
+                      <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="bi bi-github"></i>
+                      </button>
+                    </div>
+        
                 </div>
-
-                <div class="home__data">
-                  <h3 class="home__subtitle">#1 Fantasma más aterrador</h3>
-                  <h1 class="home__title">
-                    UOOOO <br />
-
-                    TRUCO O <br />
-                    TRATO!!
-                  </h1>
-                  <p class="home__description">
-                    Hi, I'm Reiza, people call me "El Labu". I am currently
-                    trying to learn something new, building my own bike with
-                    parts made only in Malaysia.
-                  </p>
-
-                  <div class="home__buttons">
-                    <a href="#" class="button"> Reservar ahora</a>
-                    <a href="#" class="button--link button--flex">
-                      Audio grabado
-                      <i class="bx bx-right-arrow-alt button__icon"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section class="swiper-slide">
-              <div class="home__content grid">
-                <div class="home__group">
-                  <img
-                    src="assets/img/home2-img.png"
-                    alt=""
-                    class="home__img"
-                  />
-                  <div class="home__indicator"></div>
-
-                  <div class="home__details-img">
-                    <h4 class="home__details-title">Adino & Grahami</h4>
-                    <span class="home__details-subtitle">
-                      No hay palabras para describirlos</span
-                    >
-                  </div>
-                </div>
-
-                <div class="home__data">
-                  <h3 class="home__subtitle">#2 top Best duo</h3>
-                  <h1 class="home__title">
-                    UOOOO <br />
-
-                    TRUCO O <br />
-                    TRATO!!
-                  </h1>
-                  <p class="home__description">
-                    Adino steals cotton candy from his brother and eats them all
-                    in one bite, a hungry beast. Grahami can no longer contain
-                    his anger towards Adino.
-                  </p>
-
-                  <div class="home__buttons">
-                    <a href="#" class="button">Book Now</a>
-                    <a href="#" class="button--link button--flex"
-                      >Track Record
-                      <i class="bx bx-right-arrow-alt button__icon"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section class="swiper-slide">
-              <div class="home__content grid">
-                <div class="home__group">
-                  <img
-                    src="assets/img/home3-img.png"
-                    alt=""
-                    class="home__img"
-                  />
-                  <div class="home__indicator"></div>
-
-                  <div class="home__details-img">
-                    <h4 class="home__details-title">Captain Sem</h4>
-                    <span class="home__details-subtitle"
-                      >Veteran Spooky Ghost</span
-                    >
-                  </div>
-                </div>
-
-                <div class="home__data">
-                  <h3 class="home__subtitle">#3 Top Scariest Ghost</h3>
-                  <h1 class="home__title">
-                    UOOOO <br />
-
-                    TRUCO O <br />
-                    TRATO!!
-                  </h1>
-                  <p class="home__description">
-                    In search for cute little puppy, Captain Sem has come back
-                    from his tragic death. With his hogwarts certified power he
-                    promise to be a hero for all of ghostkind.
-                  </p>
-
-                  <div class="home__buttons">
-                    <a href="#" class="button">Book Now</a>
-                    <a href="#" class="button--link button--flex"
-                      >Track Record
-                      <i class="bx bx-right-arrow-alt button__icon"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </section> -->
-      
-
-      <!--Categirias-->
-      <section class="section category">
-        <h2 class="section__title">
-          Favoritos del <br />
-          Momento
-        </h2>
-
-        <div class="category__container container grid">
-          <div class="category__data">
-            <img
-              src="assets/img/cars_1h.jpg"
-              alt=""
-              class="category__img rounded"
-            />
-            <h3 class="category__title">Cars</h3>
-            <p class="category__description">
-              Lorem ipsum dolor sit amet, consectetur.
-            </p>
-          </div>
-
-          <div class="category__data">
-            <img
-              src="assets/img/cars_2hv3.jpg"
-              alt=""
-              class="category__img rounded"
-            />
-            <h3 class="category__title">Cars 2</h3>
-            <p class="category__description">
-              Lorem ipsum dolor sit amet, consectetur.
-            </p>
-          </div>
-
-          <div class="category__data">
-            <img
-              src="assets/img/cars_3h.jpg"
-              alt=""
-              class="category__img rounded"
-            />
-            <h3 class="category__title">Cars 3</h3>
-            <p class="category__description">
-              Lorem ipsum dolor sit amet, consectetur.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!--Acerca de
-      <section class="section about" id="about">
-        <div class="about__container container grid">
-          <div class="about__data">
-            <h2 class="section__title about__title">
-              Acerca de Halloween
-              <br />
-              Night
-            </h2>
-            <p class="about__description">
-              Night of all the saints, or all the dead, is celebrated on October
-              31 and it is a very fun international celebration, this
-              celebration comes from ancient origins, and is already celebrated
-              by everyone.
-            </p>
-            <a href="#" class="button"> Saber más</a>
-          </div>
-
-          <img src="assets/img/about-img.png" alt="" class="about__img" />
-        </div>
-      </section> -->
-
-      <!--Truco o trato-->
-      <section class="section trick" id="trick">
-        <h2 class="section__title">Recomendados</h2>
-
-        <div class="trick__container container grid">
-          <div class="trick__content">
-            <img
-              src="assets/img/cars_1h.jpg"
-              alt=""
-              class="trick__img rounded pb-3"
-            />
-            <h3 class="trick__title">Cars</h3>
-            <span class="trick__subtitle">Lorem</span>
-            <!-- <span class="trick__price">$11.99</span> -->
-            <button class="button trick__button">
-              <a class="ver_pelicula" href="#"><i class="bi bi-eye"></i></a>
-            </button>
-          </div>
-
-          <div class="trick__content">
-            <img
-              src="assets/img/cars_2hv2.jpg"
-              alt=""
-              class="trick__img rounded pb-3"
-            />
-            <h3 class="trick__title">Cars 2</h3>
-            <span class="trick__subtitle">Lorem</span>
-            <!-- <span class="trick__price">$8.99</span> -->
-            <button class="button trick__button">
-              <a class="ver_pelicula" href="#"><i class="bi bi-eye"></i></a>
-            </button>
-          </div>
-
-          <div class="trick__content">
-            <img
-              src="assets/img/cars_3h.jpg"
-              alt=""
-              class="trick__img rounded pb-3"
-            />
-            <h3 class="trick__title">Cars 3</h3>
-            <span class="trick__subtitle">Lorem</span>
-            <!-- <span class="trick__price">$15.99</span> -->
-            <button class="button trick__button">
-              <a class="ver_pelicula" href="#"><i class="bi bi-eye"></i></a>
-            </button>
-          </div>
-
-          <div class="trick__content">
-            <img
-              src="assets/img/batman_the_dark_night.jpg"
-              alt=""
-              class="trick__img rounded pb-3"
-            />
-            <h3 class="trick__title">Batman</h3>
-            <span class="trick__subtitle">Lorem</span>
-            <!-- <span class="trick__price">$7.99</span> -->
-            <button class="button trick__button">
-              <a class="ver_pelicula" href="#"><i class="bi bi-eye"></i></a>
-            </button>
-          </div>
-
-          <div class="trick__content">
-            <img
-              src="assets/img/vengadores.jpg"
-              alt=""
-              class="trick__img rounded pb-3"
-            />
-            <h3 class="trick__title">Avengers</h3>
-            <span class="trick__subtitle">Lorem</span>
-            <!-- <span class="trick__price">$19.99</span> -->
-            <button class="button trick__button">
-              <a class="ver_pelicula" href="#"><i class="bi bi-eye"></i></a>
-            </button>
-          </div>
-
-          <div class="trick__content">
-            <img
-              src="assets/img/red.jpg"
-              alt=""
-              class="trick__img rounded pb-3"
-            />
-            <h3 class="trick__title">Red</h3>
-            <span class="trick__subtitle">Lorem</span>
-            <!-- <span class="trick__price">$17.99</span> -->
-            <button class="button trick__button">
-              <a class="ver_pelicula" href="#"><i class="bi bi-eye"></i></a>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <!--Descuentos
-      <section class="section discount">
-        <div class="discount__container container grid">
-          <div class="discount__data">
-            <h2 class="discount__title">
-              50% de descuento <br />
-
-              Sobre nuevos productos
-            </h2>
-            <a href="#" class="button">Ir a nuevo</a>
-          </div>
-
-          <img src="assets/img/discount-img.png" alt="" class="discount__img" />
-        </div>
-      </section> -->
-
-      <!--Nuevos items-->
-      <section class="section new" id="new">
-        <h2 class="section__title">Los recién llegados</h2>
-
-        <div class="new__container container">
-          <div class="swiper new-swiper">
-            <div class="swiper-wrapper">
-              <div class="new__content swiper-slide">
-                <div class="new__tag">New</div>
-                <img src="assets/img/vengadores.jpg" alt="" class="new__img rounded pb-3" />
-                <h3 class="new__title">Avengers</h3>
-                <span class="new__subtitle">Lorem</span>
-
-                <!-- <div class="new__prices">
-                  <span class="new__price">$14.99</span>
-                  <span class="new__discount">$29.99</span>
-                </div> -->
-
-                <button class="button new__button">
-                  <a class="ver_pelicula" href="#"><i class="bi bi-eye"></i></a>
-                </button>
-              </div>
-
-              <div class="new__content swiper-slide">
-                <div class="new__tag">New</div>
-                <img src="assets/img/red.jpg" alt="" class="new__img rounded pb-3" />
-                <h3 class="new__title">Red</h3>
-                <span class="new__subtitle">Lorem</span>
-
-                <!-- <div class="new__prices">
-                  <span class="new__price">$11.99</span>
-                  <span class="new__discount">$21.99</span>
-                </div> -->
-
-                <button class="button new__button">
-                  <a class="ver_pelicula" href="#"><i class="bi bi-eye"></i></a>
-                </button>
-              </div>
-
-              <div class="new__content swiper-slide">
-                <div class="new__tag">New</div>
-                <img src="assets/img/cars_toonh.jpg" alt="" class="new__img rounded pb-3" />
-                <h3 class="new__title">Cars Toons</h3>
-                <span class="new__subtitle pb-2">Lorem</span>
-
-                <!-- <div class="new__prices">
-                  <span class="new__price">$4.99</span>
-                  <span class="new__discount">$9.99</span>
-                </div> -->
-
-                <button class="button new__button">
-                  <a class="ver_pelicula" href="#"><i class="bi bi-eye"></i></a>
-                </button>
-              </div>
-
-              <div class="new__content swiper-slide">
-                <div class="new__tag">New</div>
-                <img src="assets/img/cars_3h.jpg" alt="" class="new__img rounded pb-3" />
-                <h3 class="new__title">Cars 3</h3>
-                <span class="new__subtitle pb-1">Lorem</span>
-
-                <!-- <div class="new__prices">
-                  <span class="new__price">$24.99</span>
-                  <span class="new__discount">$44.99</span>
-                </div> -->
-
-                <button class="button new__button">
-                  <a class="ver_pelicula" href="#"><i class="bi bi-eye"></i></a>
-                </button>
-              </div>
-
-              <div class="new__content swiper-slide">
-                <div class="new__tag">New</div>
-                <img src="assets/img/batman_the_dark_night.jpg" alt="" class="new__img rounded pb-3" />
-                <h3 class="new__title">Batman</h3>
-                <span class="new__subtitle">Lorem</span>
-
-                <!-- <div class="new__prices">
-                  <span class="new__price">$5.99</span>
-                  <span class="new__discount">$12.99</span>
-                </div> -->
-
-                <button class="button new__button">
-                  <a class="ver_pelicula" href="#"><i class="bi bi-eye"></i></a>
-                </button>
-              </div>
-
-              <div class="new__content swiper-slide">
-                <div class="new__tag">New</div>
-                <img src="assets/img/the_lord_of_the_rings.jpg" alt="" class="new__img rounded pb-3" />
-                <h3 class="new__title">The Lord of the Rings</h3>
-                <span class="new__subtitle">Lorem</span>
-
-                <!-- <div class="new__prices">
-                  <span class="new__price">$7.99</span>
-                  <span class="new__discount">$14.99</span>
-                </div> -->
-
-                <button class="button new__button">
-                  <a class="ver_pelicula" href="#"><i class="bi bi-eye"></i></a>
-                </button>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
+  
+      <!--
+      <div class="contenedor">
+          <div id="central">
+              <div id="login">
+                  <div class="titulo">
+                      Bienvenido
+                  </div>
+                  <form id="login">
+                      <input type="text" name="usuario" placeholder="Usuario" required>
+  
+                      <input type="password" placeholder="Contraseña" name="password" required>
+  
+                      <button type="submit" title="Ingresar" name="Ingresar">Login</button>
+                  </form>
+                  <div class="pie-form">
+                      <a href="forget.html">¿Perdiste tu contraseña?</a>
+                      <a href="register.html">¿No tienes Cuenta? Registrate</a>
+                  </div>
+              </div>
+              <div class="inferior">
+                  <a href="index.html">Volver</a>
+              </div>
+          </div>
+      </div>
+      -->
+  <script>
+    login = ()=>{
+      var email=document.getElementById("typeEmailX-2");    
+      console.log(email.value)
+      var pass=document.getElementById("typePasswordX-2");
+      console.log(pass.value)
+      localStorage.setItem("email",email.value)
+      localStorage.setItem("pass",pass.value)
+    }
+  
+  </script>
 
-      <!--Suscribirse-->
-      <section class="section newsletter">
-        <div class="newsletter__container container">
-          <h2 class="section__title">Mantente al tanto</h2>
-          <p class="newsletter__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          </p>
 
-          <form action="" class="newsletter__form">
-            <input
-              type="text"
-              placeholder="Enter your email"
-              class="newsletter__input"
-            />
-            <button class="button">Subscribe</button>
-          </form>
-        </div>
-      </section>
-    </main>
-    <!--Pie de pagina-->
+
+
+
+
+          <!--footer inicio-->
     <footer class="footer section">
       <div class="footer__container container grid">
         <div class="footer__content">
@@ -591,17 +251,13 @@
       <!-- <img src="assets/img/footer1-img.png" alt="" class="footer__img-one" /> -->
       <!-- <img src="assets/img/footer2-img.png" alt="" class="footer__img-two" /> -->
     </footer>
-    <!-- #endregion -->
-    <a href="#" class="scrollup" id="scroll-up">
-      <i class="bx bx-up-arrow-alt scrollup__icon"></i>
-    </a>
+    <!--footer fin-->
+        <!--mantiene fondo -->
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
-    <!--Scroll para que se revelen los elementos de forma suave-->
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-
-    <!--Deslizar elementos en una lista-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="bootstrap-5.2.2/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/main.js"></script>
-  </body>
+        <!--Deslizar elementos en una lista-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="bootstrap-5.2.2/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/main.js"></script>
+</body>
 </html>
