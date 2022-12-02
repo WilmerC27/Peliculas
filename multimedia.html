@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
       </head>
 <body>
-      <!--navbar inicio-->
+    <!--navbar inicio-->
     <header class="header" id="header">
       <nav class="nav container">
         <a href="index.html" class="nav__logo">
@@ -28,7 +28,7 @@
           <ul class="nav__list">
 
             <li class="nav__item">
-              <a href="#about" class="nav__link">Multimedia</a>
+              <a href="multimedia.html" class="nav__link">Multimedia</a>
             </li>
             <li class="nav__item">
               <a href="#trick" class="nav__link">Recomendados</a>
@@ -49,94 +49,133 @@
       </nav>
     </header>
         <!--navbar fin-->
-
+        
       <!-- #endregion -->
       <!-- #region Principal-->
 
-<!-- menu filtro -->
-    <!-- #region Usuario-->
-    <main class="main">
-      <!-- titulo -->
-      <section class="section category category__data">
-        <h2 class="section__title">
-          Perfil de Usuario
-        </h2>
-          
-        <!--perfil-->
-        <section>
-          <div class="discount__container container grid">
-            <div class="discount__data">
-              <h2 class="discount__title">
-                <p>Trocito de Pan</p><br/>
-                <div class="row">
-                  <p class="col">Peliculas<br>#999</p>
-                  <p class="col">Series<br>#999</p>
-                  <p class="col">Cortos<br>#999</p>
-                </div>
-              </h2>
-              <a href="lists_watching.html" class="button">Actividad</a>
-            </div>
-
-            <img src="assets/img/personas/p10.jpg" alt="" class="discount__img" />
-          </div>
-        </section>
-      </section>
-    </main>
-
     <!-- menu filtro -->
     <section class="category__data menu_filtro">
-      <!--listas en navbar inicio-->
-      <ul class="nav justify-content-center pb-4 boton-filtro bg-black">
-            <!-- viendo -->
-            <li class="nav-item">
+      <ul class="nav justify-content-center pb-4 boton-filtro">
+          <!-- mas recientes -->
+          <li class="nav-item">
+            <button type="button" class="btn">
+              Mas recientes
+            </button>
+          </li>
+          <!-- peliculas -->
+          <li class="nav-item">
               <button type="button" class="btn">
-                <a class="link-light bg-secondary" href="lists_watching.html">Viendo</a>
+                  Peliculas
               </button>
-            </li>
-            <!-- por ver -->
-            <li class="nav-item">
+          </li>
+          <!-- series -->
+          <li class="nav-item">
               <button type="button" class="btn">
-                <a class="link-light" href="lists_planned.html">Por Ver</a>
+                  Series
               </button>
-            </li>
-            <!-- vistos -->
-            <li class="nav-item">
+          </li>
+          <!-- cortos -->
+          <li class="nav-item">
               <button type="button" class="btn">
-                <a class="link-light" href="lists_completed.html">Vistos</a>
+                  Cortos
               </button>
-            </li>
-            <!-- abandonados -->
-            <li class="nav-item">
-              <button type="button" class="btn">
-                <a class="link-light" href="lists_dropped.html">Abandonados</a>
+          </li>
+          <!-- generos -->
+          <li class="nav-item">
+            <div class="dropdown-center">
+              <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Generos
               </button>
-            </li>
-        </ul>
-              <!--listas en navbar fin-->
-    </section>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Accion</a></li>
+                <li><a class="dropdown-item" href="#">Aventuras</a></li>
+                <li><a class="dropdown-item" href="#">Ciencia Ficción</a></li>
+                <li><a class="dropdown-item" href="#">Comedia</a></li>
+                <li><a class="dropdown-item" href="#">Drama</a></li>
+                <li><a class="dropdown-item" href="#">Fantasia</a></li>
+              </ul>
+            </div>
+          </li>
+          <!-- mas vistos -->
+          <li class="nav-item">
+            <button type="button" class="btn">
+              Mas vistos
+            </button>
+          </li>
+      </ul>
+  </section>
 
-    <!-- #region lista-->
-    <section>
-      <table class="category__data table text-center mt-5 bg-white">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Imagen</th>
-            <th class="col-5" scope="col">Título</th>
-            <th scope="col">Calificación</th>
-          </tr>
-        </thead>
-        <tbody class="text-black">
-          <tr class="text-black">
-            <td>1</td>
-            <td><a href="#"><img class="lista_imagen" src="assets/img/cars_toonh.jpg"></a></td>
-            <td><a class="" href="#">Cars Toons</a></td>
-            <td>-/10</td>
-          </tr>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+  <!-- menu de peliculas -->
+  <section>
+  <!-- galeria de peliculas -->
+  <div class="container text-center pt-5">
+    <div class="row">
+      <!-- pelicula 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="filtro category__data">
+          <img class="category__img img-fluid rounded" src="assets/img/cars_1h.jpg" alt="pelicula">            
+          <a href="#">Cars</a>
+        </div>
+      </div>
+      <!-- pelicula 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="filtro category__data">
+          <img class="category__img img-fluid rounded" src="assets/img/cars_2hv2.jpg" alt="pelicula">            
+          <a href="#">Cars 2</a>
+        </div>
+      </div>
+      <!-- pelicula 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="filtro category__data">
+          <img class="category__img img-fluid rounded" src="assets/img/cars_3h.jpg" alt="pelicula">            
+          <a href="#">Cars 3</a>
+        </div>
+      </div>
+      <!-- pelicula 4 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="filtro category__data">
+          <img class="category__img img-fluid rounded" src="assets/img/vengadores.jpg" alt="pelicula">            
+          <a href="#">The Avengers</a>
+        </div>
+      </div>
+      <!-- pelicula 5 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="filtro category__data">
+          <img class="category__img img-fluid rounded" src="assets/img/the_lord_of_the_rings.jpg" alt="pelicula">            
+          <a href="#">The Lord of the Rings</a>
+        </div>
+      </div>
+      <!-- pelicula 6 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="filtro category__data">
+          <img class="category__img img-fluid rounded" src="assets/img/batman_the_dark_night.jpg" alt="pelicula">            
+          <a href="#">The Dark Night</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- paginacion -->
+  <nav class="navigation">
+      <ul class="pagination justify-content-center pt-5">
+        <!-- boton anterior-->
+        <li class="page-item">
+          <a class="page-link" href="#">&lt;</a>
+        </li>
+        <!-- paginas -->
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <!-- boton siquiente-->
+        <li class="page-item">
+          <a class="page-link" href="#">&gt;</a>
+        </li>
+      </ul>
+  </nav>
+
 
 
 
@@ -233,7 +272,7 @@
       <!-- <img src="assets/img/footer1-img.png" alt="" class="footer__img-one" /> -->
       <!-- <img src="assets/img/footer2-img.png" alt="" class="footer__img-two" /> -->
     </footer>
-<!--footer fin-->
+    <!--footer fin-->
         <!--mantiene fondo -->
         <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
@@ -242,8 +281,6 @@
         <script src="bootstrap-5.2.2/js/bootstrap.bundle.min.js"></script>
         <script src="./assets/js/main.js"></script>
         <script src="scrpitsglobal.js"></script>
-        <script type="module" src="db.js"></script>
-
 
 </body>
 </html>
