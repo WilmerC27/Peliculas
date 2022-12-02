@@ -8,9 +8,26 @@
         "staff": {
             "director": "Director X",
             "cast": [
-                "Actor 1",
-                "Actor 2",
-                "Actor 3"
+                {
+                    "nombre":"Owen Wilson",
+                    "pid":"1",
+                    "rol":"Rayo McQueen"
+                },
+                {
+                    "nombre":"Paul Newman",
+                    "pid":"2",
+                    "rol":"Doc Hudson"
+                },
+                {
+                    "nombre":"Bonnie Hunt",
+                    "pid":"3",
+                    "rol":"Sally carrera"
+                },
+                {
+                    "nombre":"Larry the Cable Guy",
+                    "pid":"3",
+                    "rol":"Mater"
+                }
             ]
         }
     },
@@ -23,10 +40,26 @@
         "staff": {
             "director": "Director X",
             "cast": [
-                "Actor 1",
-                "Actor 2",
-                "Actor 3",
-                "Actor 4"
+                {
+                    "nombre":"Owen Wilson",
+                    "pid":"1",
+                    "rol":"Rayo McQueen"
+                },
+                {
+                    "nombre":"Paul Newman",
+                    "pid":"2",
+                    "rol":"Doc Hudson"
+                },
+                {
+                    "nombre":"Bonnie Hunt",
+                    "pid":"3",
+                    "rol":"Sally carrera"
+                },
+                {
+                    "nombre":"Larry the Cable Guy",
+                    "pid":"3",
+                    "rol":"Mater"
+                }
             ]
         }
     },
@@ -39,25 +72,60 @@
         "staff": {
             "director": "Director X",
             "cast": [
-                "Actor 1",
-                "Actor 2",
-                "Actor 3"
+                {
+                    "nombre":"Owen Wilson",
+                    "pid":"1",
+                    "rol":"Rayo McQueen"
+                },
+                {
+                    "nombre":"Paul Newman",
+                    "pid":"2",
+                    "rol":"Doc Hudson"
+                },
+                {
+                    "nombre":"Bonnie Hunt",
+                    "pid":"3",
+                    "rol":"Sally carrera"
+                },
+                {
+                    "nombre":"Larry the Cable Guy",
+                    "pid":"4",
+                    "rol":"Mater"
+                }
             ]
         }
     },
     {
-        "titulo": "titulo 4",
+        "titulo": "El señor de los anillos: el retorno del rey",
         "sinopsis": "sfsfgdfgfdsgfdsgdsfdfgdsafgfds",
-        "genero": "ciencia ficcion",
-        "tags":["aliens", "tecnologia"],
-        "image": "cars_3.jpg",
+        "genero": "Fantasía",
+        "tags":["Épica", "Fantasía","medieval"],
+        "image": "lotr_3h.jpg",
         "staff": {
             "director": "Director X",
             "cast": [
-                "Actor 1",
-                "Actor 2",
-                "Actor 3"
+                {
+                    "nombre":"Viggo Mortensen",
+                    "pid":"5",
+                    "rol":"Aragorn"
+                },
+                {
+                    "nombre":"Ellaijah Wood",
+                    "pid":"6",
+                    "rol":"Frodo Baggins"
+                },
+                {
+                    "nombre":"Ian McKellen",
+                    "pid":"7",
+                    "rol":"Gandalf"
+                },
+                {
+                    "nombre":"Sean Astin",
+                    "pid":"8",
+                    "rol":"Samwise Gamgee"
+                }
             ]
         }
     }
+    
 ]

@@ -47,11 +47,11 @@ if(cast){
         <div class="col-5 pb-3" >
         <div class="actor row">
             <div class="imagen col-2">
-              <img class="" src="resources/img/actor.svg" alt="actor">
+              <img class="" src="assets/img/personas/p${element.pid}.jpg" alt="actor">
             </div>
             <div class="texto-descripcion col-6">
-              <p class="nombre">${element}</p>
-              <p class="papel">Lorem ipsum dolor sit amet Consectetu</p>
+                <p class="nombre">${element.nombre}</p>
+                <p class="papel">${element.rol}</p>
             </div>
         </div>
       </div>

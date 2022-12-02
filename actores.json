@@ -1,0 +1,20 @@
+[
+    {
+        "nombre": "rayo macqueen",
+        "sinopsis": "sfsfgdfgfdsgfdsgdsfdfgdsafgfds",
+        "genero": "ciencia ficcion",
+        "tags":["aliens", "tecnologia"],
+        "image": "cars_1h.jpg",
+        "staff": {
+            "director": "Director X",
+            "cast": [
+                "Actor 1",
+                "Actor 2",
+                "Actor 3"
+            ]
+        }
+    },
+    {
+
+    }
+]
